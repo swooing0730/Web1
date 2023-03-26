@@ -1,0 +1,12 @@
+.style {
+    color: red;
+    font-family: '휴먼옛체';
+    font-size: 20pt;
+}
+
+.blue {
+    color: blue;
+    font-family: '휴먼매직체';
+    text-decoration: underline;
+    font-size: 20pt;
+}
