@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .divgroup > div {
+          margin: 3px;
+          border: 1px dotted black;
+          padding: 10px;
+        }
+        
+        @media all and (max-width: 600px) {
+          .divgroup {
+            background: white;
+            display: inline;
+          }
+          .divgroup > div {
+            background-color: white;
+          }
+        }
+      
+        @media all and (min-width: 600px) and (max-width: 1000px) {
+          .divgroup {
+            display: grid ;
+            grid-template-columns: repeat(2, 1fr);
+          }
+          .divgroup > div {
+            background-color: blue;
+          }
+        }
+      
+        @media all and (min-width: 1000px) {
+          .divgroup {
+            
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+          }
+          .divgroup > div {
+            background-color: yellow;
+          }
+        }
+      </style>      
+  </head>
+  <body>
+    <div class="divgroup">
+      <div>1번 영역</div>
+      <div>2번 영역</div>
+      <div>3번 영역</div>
+      <div>4번 영역</div>
+      <div>5번 영역</div>
+    </div>
+  </body>
+</html>
