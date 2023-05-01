@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        wordCount = prompt("정렬할 단어의 개수를 입력하세요.");
+        words = [];
+
+        for (i = 0; i < wordCount; i++) {
+        words[i] = prompt("단어를 입력하세요.");
+        }
+
+        ascendingWords = words.slice().sort();
+        descendingWords = words.slice().sort().reverse();
+
+        document.write("오름차순 정렬: " + ascendingWords + "<br/>");
+        document.write("내림차순 정렬: " + descendingWords);
+
+    </script>
+</body>
+</html>

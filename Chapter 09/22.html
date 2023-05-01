@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        now = new Date();
+        timestamp = now.getTime();
+
+        milliseconds = timestamp;
+        seconds = Math.floor(milliseconds / 1000);
+        minutes = Math.floor(seconds / 60);
+        hours = Math.floor(minutes / 60);
+
+        year = now.getFullYear();
+        month = now.getMonth() + 1;
+        date = now.getDate();
+
+        currentHour = hours % 24;
+        currentMinute = minutes % 60;
+        currentSecond = seconds % 60;
+
+        document.write(year + "년 " + month + "월 " + date + "일 " + currentHour + "시 " + currentMinute + "분 " + currentSecond + "초");
+    </script>
+</body>
+</html>

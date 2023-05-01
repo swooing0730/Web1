@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Max and Min of Three Numbers</title>
+  <script>
+    function max3(a, b, c) {
+      return Math.max(a, b, c);
+    }
+    
+    function min3(a, b, c) {
+      return Math.min(a, b, c);
+    }
+    
+    function displayResults() {
+      var num1 = parseFloat(document.getElementById("num1").value);
+      var num2 = parseFloat(document.getElementById("num2").value);
+      var num3 = parseFloat(document.getElementById("num3").value);
+      var max = max3(num1, num2, num3);
+      var min = min3(num1, num2, num3);
+      document.getElementById("result").innerHTML = "Maximum: " + max + "<br>Minimum: " + min;
+    }
+  </script>
+</head>
+<body>
+  <h1>Max and Min of Three Numbers</h1>
+  <p>Enter three numbers:</p>
+  <input type="number" id="num1"><br>
+  <input type="number" id="num2"><br>
+  <input type="number" id="num3"><br>
+  <button onclick="displayResults()">Submit</button>
+  <div id="result"></div>
+</body>
+</html>

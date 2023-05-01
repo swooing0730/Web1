@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        numCount = prompt("입력할 숫자의 개수를 입력하세요.");
+        nums = [];
+
+        for (i = 0; i < numCount; i++) {
+        nums[i] = prompt("숫자를 입력하세요.");
+        }
+
+        maxNum = Math.max.apply(null, nums);
+        minNum = Math.min.apply(null, nums);
+
+        document.write("최대값: " + maxNum + "<br/>");
+        document.write("최소값: " + minNum);
+    </script>
+</body>
+</html>
