@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="button_area"></div>
+
+<script>
+  // 버튼 1 생성
+const button1 = document.createElement('input');
+button1.type = 'button';
+button1.value = '자바스크립트에 의해서 동작으로 생성 및 삽입되었음 (1)';
+// 버튼 2 생성
+const button2 = document.createElement('input');
+button2.type = 'button';
+button2.value = '자바스크립트에 의해서 동작으로 생성 및 삽입되었음 (2)';
+// 버튼 삽입
+const buttonArea = document.getElementById('button_area');
+buttonArea.appendChild(button1);
+buttonArea.appendChild(button2);
+</script>
+
+</body>
+</html>
